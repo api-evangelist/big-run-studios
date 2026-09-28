@@ -1,23 +1,73 @@
 aid: big-run-studios
+
 name: Big Run Studios
-description: 'Big Run Studios is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.bigrunstudios.com/wp-content/uploads/2020/11/banner@3x.png
+
+description: 'Big Run Studios is a mobile game developer focused on creating cutting edge, casual competitive games for traditionally underserved audiences. Their portfolio includes titles such as Blackout Bingo, Big Cooking, Big Run Solitaire, and more, offering real‑cash rewards and social competition across iOS and Android platforms.'
+
 url: https://raw.githubusercontent.com/api-evangelist/big-run-studios/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Gaming
+- Mobile
+- Casual
+- Underserved
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/big-run-studios-hosts.yml
+- type: TermsOfService
+  url: https://bigrunstudios.com/tos/
+- type: Newsroom
+  url: https://bigrunstudios.com/news/
+- type: DomainSecurity
+  url: security/big-run-studios-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://bigrunstudios.com
+
+- type: Blog
+  url: https://bigrunstudios.com/blog/
+- type: Support
+  url: https://bigrunstudios.com/support/
+- type: PrivacyPolicy
+  url: https://bigrunstudios.com/privacy
+- type: AboutUs
+  url: https://bigrunstudios.com/about-us/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No documentation host or machine‑readable API specification was found on bigrunstudios.com.
+  evidence:
+    - url: https://bigrunstudios.com
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
